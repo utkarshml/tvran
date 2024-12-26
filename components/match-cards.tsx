@@ -31,13 +31,13 @@ export function MatchCard({ match }: MatchCardProps) {
         <Trophy className="w-24 h-24 mx-auto text-[#800080]" />
       </div>
 
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent>
+      <Dialog  open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent className='bg-gray-900'>
           <DialogHeader>
-            <DialogTitle>{match.team1} vs {match.team2}</DialogTitle>
+            <DialogTitle className='text-white'>{match.team1} vs {match.team2}</DialogTitle>
             <DialogDescription>Match Details</DialogDescription>
           </DialogHeader>
-          <div className="mt-4 space-y-2">
+          <div className="mt-4 text-white space-y-2">
             <p><strong>Score:</strong> {match.score1} - {match.score2}</p>
             <p><strong>Date:</strong> {match.date}</p>
             <p><strong>Time:</strong> {match.time}</p>

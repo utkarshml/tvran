@@ -16,7 +16,7 @@ export default function HeroBanner() {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-65">
+      <div className="absolute inset-0 bg-black opacity-85">
         
       </div>
       
@@ -46,7 +46,7 @@ export default function HeroBanner() {
             position : "relative"
           }}
          
-          className="object-cover m-auto lg:h-[250px] lg:w-[450px]"
+          className="object-cover m-auto lg:h-[250px] lg:w-fit"
         />
         </div>
         <div className='text-xl sm:text-2xl font-bold md:text-3xl mb-8'>

@@ -47,7 +47,7 @@ function Events() {
      <div className="w-full">
      <h2 className="text-[#00EF38] uppercase font-bold text-start text-3xl">Events</h2>
      </div>
-     <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6  bg-gray-700 dark:bg-black items-center justify-center">
+     <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6 bg-black items-center justify-center">
 {matches.map(match => (
           <MatchCard key={match.id} match={match} />
         ))}
