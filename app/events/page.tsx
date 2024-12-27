@@ -1,30 +1,25 @@
+"use client"
 import Image from "next/image"
 import eventBanner from "../img/event_banner-min.jpeg"
 import { MatchCard } from "@/components/match-cards"
+import { EventsData } from "../event"
+// const matches  : MatchInfo[] = [
+//     {
+//       id:"1",
+//       icon : <Trophy />,
+//       eventName:"Badminton Tournament",
+//       captainName:"John Doe",
+//       captainEmail:"lHtYX@example.com",
+//       captainNumber:"1234567890",
+//       captianGender:"M",
+//       sustituteName:"Jane Doe",
+//       sustituteEmail:"5Cg9z@example.com",
+//       sustituteNumber:"0987654321",
+//       sustituteGender:"F",
+//     }
 
-const matches = [
-    {
-      id: '1',
-      team1: 'Team A',
-      team2: 'Team B',
-      score1: 2,
-      score2: 1,
-      date: '2023-06-15',
-      time: '15:00',
-      venue: 'Stadium X'
-    },
-    {
-      id: '2',
-      team1: 'Team C',
-      team2: 'Team D',
-      score1: 0,
-      score2: 0,
-      date: '2023-06-16',
-      time: '18:30',
-      venue: 'Stadium Y'
-    },
-    // Add more matches as needed
-  ]
+//     // Add more matches as needed
+//   ]
   
 
 function Events() {
@@ -48,7 +43,7 @@ function Events() {
      <h2 className="text-[#00EF38] uppercase font-bold text-start text-3xl">Events</h2>
      </div>
      <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6 bg-black items-center justify-center">
-{matches.map(match => (
+{EventsData.map(match => (
           <MatchCard key={match.id} match={match} />
         ))}
 </div>

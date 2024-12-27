@@ -13,7 +13,7 @@ const navigation = [
   { name: 'Events', href: '/events' },
   { name: 'Sponsors', href: '/sponsors' },
   { name: 'About', href: '/about' },
-  { name: 'Matches', href: '/matches' },
+  { name: 'Contact Us', href: '/contact' },
 ]
 
 export function Header() {

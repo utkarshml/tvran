@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
 import bannerImg from "../app/img/banner.jpeg"
@@ -56,7 +57,7 @@ export default function HeroBanner() {
           href="/get-started" 
           className="inline-block bg-transparent border-2 uppercase border-[#c4691f] text-white font-bold py-3 px-8 rounded-full transition duration-300"
         >
-          Matches
+          Register Now
         </Link>
       </div>
     </div>

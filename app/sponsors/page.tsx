@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import sponsorBanner from "../img/sponsors_banner.webp"
+import SponsorsImg from "../img/Group 13.png";
 
 
 
@@ -20,20 +22,12 @@ function Sponsors() {
     
     {/* Content */}
     <div  className="  relative z-10 flex flex-col p-4 min-h-[90vh] bg-black bg-opacity-65  rounded-lg   m-auto    w-full  px-4 sm:px-6 lg:px-8">
-     <h1 className="text-4xl uppercase font-bold text-white text-start">
+     <h1 className="lg:text-4xl md:text-2xl  uppercase font-bold text-white text-start">
       <span className="text-[#00EF38]">Our</span> Past <br/> <span className="text-[#00EF38]">Sponsors</span>
      </h1>
-     <div className="absolute flex justify-center items-center bg-white rounded-full bottom-[14.5rem] w-[15rem] h-[15rem]  right-3">
-
-      </div>
-      <div className="absolute flex justify-center items-center rounded-full bottom-4 w-[12rem] h-[12rem] bg-gradient-to-r from-[#00EF38] to-[#00B785] right-4">
-      <div className="w-[150px] h-[150px] bg-white rounded-full flex justify-center items-center">
-
-      </div>
-      </div>
-      <div className="absolute flex justify-center items-center rounded-full bottom-[7rem] w-[11rem] h-[11rem] bg-white right-[14rem]">
-      </div>
-
+       <div className="w-full h-full flex items-center justify-center p-4">
+        <Image   src={SponsorsImg} alt="sponsors" />
+       </div>
       
 
     </div>

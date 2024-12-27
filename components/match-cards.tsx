@@ -1,25 +1,29 @@
 'use client'
 
-import { useState } from 'react'
-import { Trophy } from 'lucide-react'
+import React, { ReactElement, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import { Separator } from './ui/separator'
 
-interface MatchInfo {
-  id: string
-  team1: string
-  team2: string
-  score1: number
-  score2: number
-  date: string
-  time: string
-  venue: string
+export interface MatchInfo {
+  id : string,
+   icon : ReactElement<SVGAElement>,
+   eventName : string,
+   captainName : string,
+   captainNumber : string,
+   captainEmail : string,
+   captianGender : string,
+   sustituteName : string,
+   sustituteNumber : string,
+   sustituteEmail : string,
+   sustituteGender : string,
+   
 }
 
 interface MatchCardProps {
   match: MatchInfo
 }
 
-export function MatchCard({ match }: MatchCardProps) {
+export function   MatchCard({ match }: MatchCardProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -28,21 +32,35 @@ export function MatchCard({ match }: MatchCardProps) {
         className="bg-white rounded-lg shadow-md p-6 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105"
         onClick={() => setIsOpen(true)}
       >
-        <Trophy className="w-24 h-24 mx-auto text-[#800080]" />
+        {React.cloneElement(match.icon, { className: "w-24 h-24 mx-auto text-[#00EF38]" })}
+        <h2 className="text-2xl font-bold text-center mt-4 text-[#00EF38]">{match.eventName}</h2>
       </div>
 
       <Dialog  open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className='bg-gray-900'>
           <DialogHeader>
-            <DialogTitle className='text-white'>{match.team1} vs {match.team2}</DialogTitle>
-            <DialogDescription>Match Details</DialogDescription>
+            <DialogTitle className='text-white'><div className='flex items-center w-fit gap-5 my-5'>
+            {React.cloneElement(match.icon, { className: "w-7 h-7 mx-auto text-[#00EF38]" })}
+              <span className='ml-2 text-[#00EF38]'>{match.eventName}</span>
+              </div></DialogTitle>
+            
+            <DialogDescription>  <Separator/></DialogDescription>
           </DialogHeader>
-          <div className="mt-4 text-white space-y-2">
-            <p><strong>Score:</strong> {match.score1} - {match.score2}</p>
-            <p><strong>Date:</strong> {match.date}</p>
-            <p><strong>Time:</strong> {match.time}</p>
-            <p><strong>Venue:</strong> {match.venue}</p>
+        <div>
+          <h2 className='text-xl font-bold'>CAPTAIN</h2>
+          <div className='mt-5'>
+            <div className='' >Captain Name ({match.captianGender})</div>
+            <div className='text-[#00EF38]'>{match.captainName}</div>
+            <div>{match.captainNumber}</div>
+            <div>{match.captainEmail}</div>
           </div>
+          <div className='mt-5'>
+            <div>Captain Name ({match.sustituteGender})</div>
+            <div className='text-[#00EF38]'>{match.sustituteName}</div>
+            <div>{match.sustituteNumber}</div>
+            <div>{match.sustituteEmail}</div>
+          </div>
+        </div>
         </DialogContent>
       </Dialog>
     </>
