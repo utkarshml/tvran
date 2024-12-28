@@ -7,7 +7,7 @@ import SponsorsImg from "../img/Group 13.png";
 
 function Sponsors() {
   return (
-    <div className="relative h-full p-8 flex items-center justify-center overflow-hidden">
+    <div className="relative h-fit p-8 flex items-center justify-center  overflow-hidden">
     {/* Background Image */}
     <Image
       src={sponsorBanner}
@@ -21,11 +21,11 @@ function Sponsors() {
     <div className="absolute inset-0 bg-black opacity-65"> </div>
     
     {/* Content */}
-    <div  className="  relative z-10 flex flex-col p-4 min-h-[90vh] bg-black bg-opacity-65  rounded-lg   m-auto    w-full  px-4 sm:px-6 lg:px-8">
+    <div  className="  relative z-10 flex flex-col p-3 bg-gray-900 bg-opacity-65  rounded-lg   m-auto    w-full  px-4 sm:px-6 lg:px-8">
      <h1 className="lg:text-4xl md:text-2xl  uppercase font-bold text-white text-start">
       <span className="text-[#00EF38]">Our</span> Past <br/> <span className="text-[#00EF38]">Sponsors</span>
      </h1>
-       <div className="w-full h-full flex items-center justify-center p-4">
+       <div className="w-full h-full flex items-center justify-center ">
         <Image   src={SponsorsImg} alt="sponsors" />
        </div>
       

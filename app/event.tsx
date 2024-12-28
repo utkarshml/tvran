@@ -1,7 +1,13 @@
 import { MatchInfo } from "@/components/match-cards";
+import { CgGym } from "react-icons/cg";
+import { CiBasketball } from "react-icons/ci";
 
-import { FaBorderAll } from "react-icons/fa";
-import { MdOutlineSportsBasketball, MdOutlineSportsCricket, MdOutlineSportsSoccer, MdOutlineSportsVolleyball, MdSportsTennis } from "react-icons/md";
+import { FaBorderAll, FaChess } from "react-icons/fa";
+import { FaRegChessQueen, FaTableTennisPaddleBall } from "react-icons/fa6";
+import { FcSportsMode } from "react-icons/fc";
+import { GiTennisRacket } from "react-icons/gi";
+import { MdOutlineSportsBasketball, MdOutlineSportsCricket, MdOutlineSportsSoccer, MdOutlineSportsVolleyball, MdSportsKabaddi, MdSportsTennis } from "react-icons/md";
+import { TbPlayVolleyball } from "react-icons/tb";
 
 export const  EventsData : MatchInfo[] = [
     {
@@ -82,6 +88,124 @@ export const  EventsData : MatchInfo[] = [
       "sustituteEmail": "priyansh.21136@knit.ac.in",
       "sustituteGender": "Male"
     },
-    
+
+    {
+      "id": "7",
+      "icon": <FcSportsMode />,
+      "eventName": "Athletics",
+      "captainName": "Neha Sharma",
+      "captainNumber": "9935421533",
+      "captainEmail": "neha.21631@knit.ac.in",
+      "captianGender": "Female",
+      "sustituteName": "Divyanshi Rastogi",
+      "sustituteNumber": "9555759391",
+      "sustituteEmail": "divyanshi.21121@knit.ac.in",
+      "sustituteGender": "Female"
+    },
+    {
+      "id": "8",
+      "icon": <CgGym />,
+      "eventName": "Weight Lifting",
+      "captainName": "Vivek Gautam",
+      "captainNumber": "9027013784",
+      "captainEmail": "vivek.21553@knit.ac.in",
+      "captianGender": "Male",
+      "sustituteName": "Chirag Upadhayay",
+      "sustituteNumber": "8445391239",
+      "sustituteEmail": "chirag.22214@knit.ac.in",
+      "sustituteGender": "Male"
+    },
+    {
+      "id": "9",
+      "icon": <MdSportsKabaddi />      ,
+      "eventName": "Kho-Kho",
+      "captainName": "Mahesh Sharma",
+      "captainNumber": "6396325726",
+      "captainEmail": "mahesh.21529@knit.ac.in",
+      "captianGender": "Male",
+      "sustituteName": "Ayush Gupta",
+      "sustituteNumber": "8869942749",
+      "sustituteEmail": "ayush.21512@knit.ac.in",
+      "sustituteGender": "Male"
+    },
+    {
+      "id": "10",
+      "icon": <FaChess />,
+      "eventName": "Chess",
+      "captainName": "Abhinay Soni",
+      "captainNumber": "6306701637",
+      "captainEmail": "vickyofc716@gmail.com",
+      "captianGender": "Male",
+      "sustituteName": "NA",
+      "sustituteNumber": "NA",
+      "sustituteEmail": "NA",
+      "sustituteGender": "NA",
+    },
+
+      {
+        "id": "11",
+        "icon": <FaRegChessQueen />,
+        "eventName": "Chess (girls)",
+        "captainName": "Swati Singh",
+        "captainNumber": "7651834814",
+        "captainEmail": "swati.21660@knit.ac.in",
+        "captianGender": "Female",
+        "sustituteName": "Nidhi Verma",
+        "sustituteNumber": "7905771603",
+        "sustituteEmail": "nidhi.21342@knit.ac.in",
+        "sustituteGender": "Female"
+      },
+      {
+        "id": "12",
+        "icon": <TbPlayVolleyball />,
+        "eventName": "Volleyball (girls)",
+        "captainName": "Lalita Gola",
+        "captainNumber": "8979973328",
+        "captainEmail": "lalita.21438@knit.ac.in",
+        "captianGender": "Female",
+        "sustituteName": "Shruti Dutta",
+        "sustituteNumber": "8765465904",
+        "sustituteEmail": "Shruti.21457@gmail.com",
+        "sustituteGender": "Female"
+      },
+      {
+        "id": "13",
+        "icon": <CiBasketball />,
+        "eventName": "Basketball (girls)",
+        "captainName": "Shubhangi Shukla",
+        "captainNumber": "6306724573",
+        "captainEmail": "shubhangi.21459@knit.ac.in",
+        "captianGender": "Female",
+        "sustituteName": "Anshika Patel",
+        "sustituteNumber": "8081537931",
+        "sustituteEmail": "anshikapatel0302@gmail.com",
+        "sustituteGender": "Female"
+      },
+      {
+        "id": "14",
+        "icon": <FaTableTennisPaddleBall />,
+        "eventName": "Table Tennis (girls)",
+        "captainName": "Sonali Madhupiya",
+        "captainNumber": "7007439573",
+        "captainEmail": "sonali.21259@knit.ac.in",
+        "captianGender": "Female",
+        "sustituteName": "Shreya Dwivedi",
+        "sustituteNumber": "7525071604",
+        "sustituteEmail": "shreya.21253@knit.ac.in",
+        "sustituteGender": "Female"
+      },
+      {
+        "id": "15",
+        "icon": <GiTennisRacket />,
+        "eventName": "Badminton (girls)",
+        "captainName": "Shreya Rai",
+        "captainNumber": "6386946072",
+        "captainEmail": "srai18898@gmail.com",
+        "captianGender": "Female",
+        "sustituteName": "Pushpanjali",
+        "sustituteNumber": "7063981900",
+        "sustituteEmail": "pushpanjali.21137@knit.ac.in",
+        "sustituteGender": "Female"
+      }
   ]
   

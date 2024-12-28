@@ -29,7 +29,7 @@ export function   MatchCard({ match }: MatchCardProps) {
   return (
     <>
       <div
-        className="bg-white rounded-lg shadow-md p-6 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105"
+        className="bg-white w-[18rem] rounded-lg shadow-md p-6 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105"
         onClick={() => setIsOpen(true)}
       >
         {React.cloneElement(match.icon, { className: "w-24 h-24 mx-auto text-[#00EF38]" })}

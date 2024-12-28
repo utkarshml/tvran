@@ -15,7 +15,7 @@ import deepanshu from "../img/deepanshu.jpeg"
 function Events() {
     const [tabActive, setTabActive] = useState("convenor")
   return (
-    <div className="relative h-full p-8 flex items-center justify-center overflow-hidden">
+    <div className="relative h-full p-4 lg:px-12 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src={contactUsBanner}
@@ -29,9 +29,9 @@ function Events() {
       <div className="absolute inset-0 "> </div>
       
       {/* Content */}
-      <div className=" z-10 flex flex-col justify-center items-center bg-black bg-opacity-75 py-9 rounded-xl  min-h-[95vh]    w-full  px-4 sm:px-6 lg:px-8">
+      <div className=" z-10 flex flex-col justify-center items-center bg-black bg-opacity-75 py-9 rounded-xl     w-full  px-4 sm:px-6 lg:px-8">
       <h2 className="text-[#00EF38] uppercase font-bold text-start text-3xl">Contact Us</h2>
-      <Tabs defaultValue="convenor" className="w-1/2 mt-7">
+      <Tabs defaultValue="convenor" className="lg:w-1/2 w-full mt-7">
   <TabsList className="w-full p-5 flex flex-wrap h-auto bg-[linear-gradient(130deg,_#FF7F50,_#FFD700)] text-white text-2xl justify-evenly ">
     <TabsTrigger style={{ color: tabActive === "convenor" ? "#00EF38" : "white" }} onClick={() => setTabActive("convenor")} className={`font-bold`}  value="convenor">CONVENOR</TabsTrigger>
     <TabsTrigger style={{ color: tabActive === "secretaries" ? "#00EF38" : "white" }} onClick={() => setTabActive("secretaries")} className={`font-bold`} value="secretaries">SECRETARIES</TabsTrigger>

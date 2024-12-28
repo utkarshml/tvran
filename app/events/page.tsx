@@ -24,7 +24,7 @@ import { EventsData } from "../event"
 
 function Events() {
   return (
-    <div className="relative h-full p-8 flex items-center justify-center overflow-hidden">
+    <div className="relative h-full  lg:px-12 p-8 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src={eventBanner}
@@ -35,14 +35,14 @@ function Events() {
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-65"> </div>
+      <div className="absolute inset-0 bg-black opacity-50"> </div>
       
       {/* Content */}
-      <div className=" z-10 flex flex-col   w-full  px-4 sm:px-6 lg:px-8">
+      <div className=" z-10 flex flex-col   w-full   lg:px-8">
      <div className="w-full">
      <h2 className="text-[#00EF38] uppercase font-bold text-start text-3xl">Events</h2>
      </div>
-     <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6 bg-black items-center justify-center">
+     <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6 bg-gray-900 bg-opacity-65 items-center justify-center">
 {EventsData.map(match => (
           <MatchCard key={match.id} match={match} />
         ))}
