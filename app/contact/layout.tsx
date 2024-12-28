@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     'Events',
   ],
   openGraph: {
-    title: 'Sponsors | TVRAN',
+    title: 'Contact Us | TVRAN',
     description: 'TVRAN is a community of people who loves sports and want to improve their skills.',
-    url: 'https://tvran.vercel.app/events',
+    url: 'https://www.tvaran.org.in/contact',
     siteName: 'TVRAN',
     images: [
       {
-        url: 'https://tvran.vercel.app/img/tvranLogo.png',
+        url: 'https://www.tvaran.org.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FtvranLogo.f4b3f304.png&w=640&q=75',
         alt: 'TVRAN Logo',
       },
     ],

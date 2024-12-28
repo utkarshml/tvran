@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sponsors | TVRAN',
     description: 'TVRAN is a community of people who loves sports and want to improve their skills.',
-    url: 'https://tvran.vercel.app/events',
+    url: 'https://tvran.vercel.app/sponsors',
     siteName: 'TVRAN',
     images: [
       {

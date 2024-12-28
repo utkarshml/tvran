@@ -24,7 +24,7 @@ import manasvi from "../img/manashvi2.jpg"
 // Sample Data
 type TeamDataKey = 'convenor' | 'secretaries' | 'coordinator' | 'managing team';
 type TeamData  = { name: string; phone: string; image?: StaticImageData };
-const teamData: Record<TeamDataKey, TeamData[]> = {
+const teamData: Record<TeamDataKey, TeamData[]> | Record<string, TeamData[]> = {
   convenor: [
     { name: "PROF. VARUN KUMAR", phone: "7895902755", image : varunSir },
     { name: "PROF. SP GANGWAR", phone: " 8765890822", image : spSir },
@@ -93,7 +93,7 @@ function Events() {
               <div
                 className={`grid lg:grid-cols-3 w-full grid-cols-1 gap-4`}
               >
-                {teamData[key].map((member : TeamData , index : number) => (
+                {(teamData[key as TeamDataKey] as TeamData[]).map((member : TeamData , index : number) => (
                   <Card
                     key={index}
                     className="w-fit px-4 mx-auto mt-4 bg-[linear-gradient(287.99deg,_rgba(26,_28,_26,_0.91)_3.5%,_rgba(53,_60,_57,_0.91)_49.45%,_rgba(38,_51,_51,_0.91)_99.43%)] bg-blend-lighten"
