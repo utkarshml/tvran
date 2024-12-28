@@ -3,6 +3,8 @@ import Image from "next/image"
 import eventBanner from "../img/event_banner-min.jpeg"
 import { MatchCard } from "@/components/match-cards"
 import { EventsData } from "../event"
+
+import Link from "next/link"
 // const matches  : MatchInfo[] = [
 //     {
 //       id:"1",
@@ -39,8 +41,9 @@ function Events() {
       
       {/* Content */}
       <div className=" z-10 flex flex-col   w-full   lg:px-8">
-     <div className="w-full">
+     <div className="w-full flex justify-between items-center">
      <h2 className="text-[#00EF38] uppercase font-bold text-start text-3xl">Events</h2>
+     <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScj_knoL1_vvY-HeIb581jVig_N_B6A1wRFalBp9aAWotsGfA/viewform?pli=1"  className="inline-block bg-transparent border-2 uppercase border-[#c4691f] hover:bg-[#c4691f] hover:bg-opacity-75 text-white font-bold py-3 px-8 rounded-xl transition duration-300">Register</Link>
      </div>
      <div className="flex flex-row flex-wrap rounded-md mt-7 p-7 gap-6 bg-gray-900 bg-opacity-65 items-center justify-center">
 {EventsData.map(match => (

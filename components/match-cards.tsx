@@ -49,13 +49,14 @@ export function   MatchCard({ match }: MatchCardProps) {
         <div>
           <h2 className='text-xl font-bold'>CAPTAIN</h2>
           <div className='mt-5'>
-            <div className='' >Captain Name ({match.captianGender})</div>
+            <div className='' >Captain Name </div>
             <div className='text-[#00EF38]'>{match.captainName}</div>
             <div>{match.captainNumber}</div>
             <div>{match.captainEmail}</div>
           </div>
           <div className='mt-5'>
-            <div>Captain Name ({match.sustituteGender})</div>
+        
+            <div>Substitute Name</div>
             <div className='text-[#00EF38]'>{match.sustituteName}</div>
             <div>{match.sustituteNumber}</div>
             <div>{match.sustituteEmail}</div>

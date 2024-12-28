@@ -9,7 +9,43 @@ import {
   CardHeader,
 
 } from "@/components/ui/card"
+import { TeacherCard } from "@/components/ui/teacher-card";
 import Image from "next/image";
+import dirSir from "../img/dirctorSir.jpg"
+import sujeetSir from "../img/csa_chairman.jpg"
+import samirSir from "../img/sameersir.jpg"
+
+
+const teachers  = [
+  {
+    name: "DR. R.K UPADHYAYA",
+    role: "DIRECTOR, KNIT SULTANPUR",
+    imageUrl: dirSir,
+    socialLinks: [
+      
+      { type: 'linkedin', url: 'https://www.linkedin.com/in/rajeev-kumar-upadhyay-8b0202190/' },
+      { type: 'email', url: 'dirctor@knit.ac.in' }
+    ]
+  },
+  {
+    name: "DR. SUJEET AGRAWAL",
+    role: "CHAIRMAN-CSA, KNIT SULTANPUR",
+    imageUrl: sujeetSir,
+    socialLinks: [
+      { type: 'linkedin', url: 'https://www.linkedin.com/in/sujeet-agarwal-33791572/' },
+      { type: 'email', url: 'tvaran@knit.ac.in' }
+    ]
+  },
+  {
+    name: "PROF. SAMEER SRIVASTAVA",
+    role: "DEAN OF STUDENT OF WELFARE",
+    imageUrl: samirSir,
+    socialLinks: [
+      { type: "linkedin", url: 'https://www.linkedin.com/in/samir-srivastava-0774b213/' },
+      { type: 'email', url: 'tvaran@knit.ac.in' }
+    ]
+  },
+]
 
 function Sponsors() {
   return (
@@ -38,6 +74,11 @@ function Sponsors() {
             <p className="mt-5">
               The Sports Council of KNIT Sultanpur is dedicated to fostering a vibrant and inclusive sports culture that complements the academic growth of our students by promoting physical excellence, teamwork, and sportsmanship. The Sports Council aims to instill core values like discipline, respect, and fair play, encouraging students of all skill levels to participate and grow.          </p>
           </div>
+          <div className="grid  my-10 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teachers.map((teacher, index) => (
+            <TeacherCard key={index} name={teacher.name} role={teacher.role} imageUrl={teacher.imageUrl} socialLinks={teacher.socialLinks} />
+          ))}
+        </div>
           <h2 className=" text-[#00EF38] font-semibold text-start lg:text-4xl text-2xl ">About us</h2>
           <div className="grid gap-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
             <Card className="lg:col-span-1 bg-black md:col-span-1 grid justify-center items-center  w-full  ">

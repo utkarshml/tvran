@@ -1,10 +1,11 @@
 "use client";
 import Link from 'next/link'
 import TvranLogo from "../app/img/tvranLogo.png"
-import { Instagram,  Youtube } from 'lucide-react'
+import { Instagram,   MapPin,  Youtube } from 'lucide-react'
 import knitLogo from "../app/img/dd2fd02f515ce28eae182b93cf9602cc.png"
 import Image from 'next/image'
 import { Separator } from '@radix-ui/react-separator'
+import { MdEmail } from 'react-icons/md';
 
 const companyLinks = [
   { name: 'Home', href: '/' },
@@ -40,6 +41,9 @@ export function Footer() {
               </Link>
 
             </div>
+            <div className='mt-5 flex justify-start  gap-2'>
+            <MapPin /> <span className='font-bold '>KNIT Sultanpur, Uttar <br/>Pradesh 228118</span>
+            </div>
           </div>
           </div>
           
@@ -74,8 +78,8 @@ export function Footer() {
                   </span>
                 </li>
                 <li >
-                  <span  className="text-base text-white hover:text-gray-600">
-                  tvaran@knit.ac.in
+                  <span  className="text-base text-white flex justify-start items-center gap-2 hover:text-gray-600">
+                 <MdEmail /> tvaran@knit.ac.in
                   </span>
                 </li>
                 <li >
@@ -91,8 +95,11 @@ export function Footer() {
       </div>
       <Separator className='bg-gray-600 mx-3  h-[1px]' />
       <div className='w-full text-center pt-4 pb-8'>
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+              Develop By ❤️  Utkarsh and Shahid
+     </p>
       <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              © 2025 TvRan. All rights reserved.
+              © 2025 TvRan. All rights reserved. 
      </p>
       </div>
  

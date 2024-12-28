@@ -92,7 +92,7 @@ export const  EventsData : MatchInfo[] = [
     {
       "id": "7",
       "icon": <FcSportsMode />,
-      "eventName": "Athletics",
+      "eventName": "Athletics (girls)",
       "captainName": "Neha Sharma",
       "captainNumber": "9935421533",
       "captainEmail": "neha.21631@knit.ac.in",
@@ -141,7 +141,6 @@ export const  EventsData : MatchInfo[] = [
       "sustituteEmail": "NA",
       "sustituteGender": "NA",
     },
-
       {
         "id": "11",
         "icon": <FaRegChessQueen />,
@@ -206,6 +205,33 @@ export const  EventsData : MatchInfo[] = [
         "sustituteNumber": "7063981900",
         "sustituteEmail": "pushpanjali.21137@knit.ac.in",
         "sustituteGender": "Female"
+      },
+      {
+        "id": "16",
+        "icon": <FcSportsMode />,
+        "eventName": "Athletics",
+        "captainName": "Harshit Chaurasia",
+        "captainNumber": "8931052114",
+        "captainEmail": "harshit.21330@gmail.com",
+        "captianGender": "Male",
+        "sustituteName": "Prince Kumar Jaiswal",
+        "sustituteNumber": "7462882512",
+        "sustituteEmail": "prince.21536@knit.ac.in",
+        "sustituteGender": "Male"
+      },
+      {
+        "id": "1",
+        "icon": <FaTableTennisPaddleBall />,
+        "eventName": "Table Tennis",
+        "captainName": "Sudhakar Rajput",
+        "captainNumber": "8318614536",
+        "captainEmail": "sudhakar.21658@knit.ac.in",
+        "captianGender": "Male",
+        "sustituteName": "Kushagra Agarwal",
+        "sustituteNumber": "9119737489",
+        "sustituteEmail": "kushagra.21527@knit.ac.in",
+        "sustituteGender": "Male"
       }
+      
   ]
   

@@ -54,8 +54,9 @@ export default function HeroBanner() {
             <p className="font-racing" >ULTIMATE BATTLE OF <span className='text-[#00EF38]'>SPORTSMANSHIP.</span> </p>
         </div>
         <Link 
-          href="/get-started" 
-          className="inline-block bg-transparent border-2 uppercase border-[#c4691f] text-white font-bold py-3 px-8 rounded-full transition duration-300"
+          target='_blank'
+          href="https://docs.google.com/forms/d/e/1FAIpQLScj_knoL1_vvY-HeIb581jVig_N_B6A1wRFalBp9aAWotsGfA/viewform?pli=1" 
+          className="inline-block bg-transparent border-2 uppercase border-[#c4691f] hover:bg-[#c4691f] hover:bg-opacity-75 text-white font-bold py-3 px-8 rounded-full transition duration-300"
         >
           Register Now
         </Link>
