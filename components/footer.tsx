@@ -96,7 +96,7 @@ export function Footer() {
       <Separator className='bg-gray-600 mx-3  h-[1px]' />
       <div className='w-full text-center pt-4 pb-8'>
       <p className="text-sm text-gray-500 dark:text-gray-400">
-              Develop By ❤️  Utkarsh and Shahid
+              Develop By Utkarsh and Shahid
      </p>
       <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
               © 2025 TvRan. All rights reserved. 

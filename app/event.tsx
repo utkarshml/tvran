@@ -4,9 +4,8 @@ import { CiBasketball } from "react-icons/ci";
 
 import { FaBorderAll, FaChess } from "react-icons/fa";
 import { FaRegChessQueen, FaTableTennisPaddleBall } from "react-icons/fa6";
-import { FcSportsMode } from "react-icons/fc";
 import { GiTennisRacket } from "react-icons/gi";
-import { MdOutlineSportsBasketball, MdOutlineSportsCricket, MdOutlineSportsSoccer, MdOutlineSportsVolleyball, MdSportsKabaddi, MdSportsTennis } from "react-icons/md";
+import { MdDirectionsRun, MdOutlineSportsBasketball, MdOutlineSportsCricket, MdOutlineSportsSoccer, MdOutlineSportsVolleyball, MdSportsKabaddi, MdSportsTennis } from "react-icons/md";
 import { TbPlayVolleyball } from "react-icons/tb";
 
 export const  EventsData : MatchInfo[] = [
@@ -91,7 +90,7 @@ export const  EventsData : MatchInfo[] = [
 
     {
       "id": "7",
-      "icon": <FcSportsMode />,
+      "icon": <MdDirectionsRun />,
       "eventName": "Athletics (girls)",
       "captainName": "Neha Sharma",
       "captainNumber": "9935421533",
@@ -208,7 +207,7 @@ export const  EventsData : MatchInfo[] = [
       },
       {
         "id": "16",
-        "icon": <FcSportsMode />,
+        "icon": <MdDirectionsRun />,
         "eventName": "Athletics",
         "captainName": "Harshit Chaurasia",
         "captainNumber": "8931052114",

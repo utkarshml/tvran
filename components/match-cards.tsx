@@ -47,19 +47,19 @@ export function   MatchCard({ match }: MatchCardProps) {
             <DialogDescription>  <Separator/></DialogDescription>
           </DialogHeader>
         <div>
-          <h2 className='text-xl font-bold'>CAPTAIN</h2>
+          {/* <h2 className='text-xl font-bold'>CAPTAIN</h2> */}
           <div className='mt-5'>
-            <div className='' >Captain Name </div>
+            <div className='font-bold' >Captain </div>
             <div className='text-[#00EF38]'>{match.captainName}</div>
-            <div>{match.captainNumber}</div>
-            <div>{match.captainEmail}</div>
+            <div> Mobile No - {match.captainNumber}</div>
+            <div>Email - {match.captainEmail}</div>
           </div>
           <div className='mt-5'>
-        
-            <div>Substitute Name</div>
+
+            <div className='font-bold'>Other</div>
             <div className='text-[#00EF38]'>{match.sustituteName}</div>
-            <div>{match.sustituteNumber}</div>
-            <div>{match.sustituteEmail}</div>
+            <div>Mobile No - {match.sustituteNumber}</div>
+            <div>Email - {match.sustituteEmail}</div>
           </div>
         </div>
         </DialogContent>

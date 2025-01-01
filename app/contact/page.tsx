@@ -39,7 +39,7 @@ const teamData: Record<TeamDataKey, TeamData[]> | Record<string, TeamData[]> = {
    
   ],
   "managing team": [
-    { name: "MANASHVI SWAROOP", phone: "8726711567", image: manasvi },
+    { name: "MANASVI SWAROOP", phone: "8726711567", image: manasvi },
     { name: "SANSKRITI GOYAL", phone: "9058894258", image: sanskriti },
     { name: "NIHAL NITIN SINGH", phone: "9120834888", image: nihal },
     { name: "DEEPANSHU PANDEY", phone: "9555793012", image: deepanshu },
