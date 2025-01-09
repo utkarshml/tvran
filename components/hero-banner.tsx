@@ -55,7 +55,7 @@ export default function HeroBanner() {
         </div>
         <Link 
           target='_blank'
-          href="https://docs.google.com/forms/d/e/1FAIpQLScj_knoL1_vvY-HeIb581jVig_N_B6A1wRFalBp9aAWotsGfA/viewform?pli=1" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdJf9lO6l1GeCDVwAN2aAKiM8r18incsXzfAm111M0T1dPRZQ/viewform?usp=dialog" 
           className="inline-block bg-transparent border-2 uppercase border-[#c4691f] hover:bg-[#c4691f] hover:bg-opacity-75 text-white font-bold py-3 px-8 rounded-full transition duration-300"
         >
           Register Now
